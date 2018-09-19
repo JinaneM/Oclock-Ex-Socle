@@ -1,6 +1,6 @@
 /* === Exo8 ===
  *
- * Dans la fonction ci-dessous, le paramètre arr est une tableau.
+ * Dans la fonction ci-dessous, le paramètre arr est un tableau.
  * Retourner la chaîne de caractères la plus longue de l'Array.
  *
  * Par exemple :

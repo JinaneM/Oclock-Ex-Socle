@@ -1,6 +1,6 @@
 /* === Exo9 ===
  *
- * Dans la fonction ci-dessous, le paramètre arr est une tableau.
+ * Dans la fonction ci-dessous, le paramètre arr est un tableau.
  * Retourner la somme des nombres contenus dans cet Array.
  *
  * Par exemple :

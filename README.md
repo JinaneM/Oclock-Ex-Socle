@@ -27,4 +27,4 @@ Démarrage dans le fichier `html/index.html`
 
 ## Instructions
 
-Dans le fichier `html/index.html`, les liens vers les exos ainsi qu'une liste de ressources et notions associées à chaque exo
+Dans le fichier `html/index.html`, vous trouverez les liens vers les exos, ainsi qu'une liste de ressources et notions associées à chaque exo.
