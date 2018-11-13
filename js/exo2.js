@@ -5,13 +5,6 @@
  * 3. On affiche le résultat dans #result.
  */
 
-function formProcess(){
-    var val = document.forms['input']['input1'].value + '<br/>';
-    val += document.forms['input']['input2'].value + '<br/>';
-    document.getElementById('result').innerHTML = result;
-    
-}
-
 function Additionner(){
     var val1 = +document.getElementById('input1').value;
     var val2 = +document.getElementById('input2').value;
