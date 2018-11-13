@@ -6,10 +6,11 @@
  * 4. Afficher le résultat dans #result.
  */
 
+
  function Additionner(){
-     const val1= +document.getElementById('firstVal').value;
-     const val2= +document.getElementById('secondVal').value;
-     const result = val1 + val2;
-       return document.getElementById('result').innerHTML = result;
-     
+    var val1 = +prompt('Enter first number','chaîne par défaut');
+    var val2 = +prompt('Enter second number','chaîne par défaut');
+    const result = val1 + val2;
+    document.getElementById('result').innerHTML = result;   
  }
+ Additionner();
