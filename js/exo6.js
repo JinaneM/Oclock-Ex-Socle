@@ -6,6 +6,10 @@
 
 function isEven(int) {
 
+    const result = int%2 === 0 ? true : false;
+    return result ; 
+    
+
 }
 
 

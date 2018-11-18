@@ -6,6 +6,8 @@
 
 function doubleInt(int) {
 
+    let result = int * 2;
+    return result;
 }
 
 

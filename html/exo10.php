@@ -32,11 +32,31 @@ require_once '../inc/functions.php';
  *
  */
 
-
+session_start();
 function checkStrings() {
+    $dirty_string = $_SESSION["dirty_strings"];
+    $pattern1 = '/^([a-z].+)@([a-z].+)\.([a-z]{2,3})$/';
+    $pattern2 = '/^([http|https]+):\/\/([a-z]+)\.([a-z]{2,3}).*/';
+    $email = [];
+    $urls = [];
 
+    foreach ($dirty_string as $key => $value) {
+        checkPattern($pattern1,$value, $email);
+        checkPattern($pattern2,$value, $urls);
+    }
+    $_SESSION["clean_emails"] = $email;
+    $_SESSION["clean_urls"] = $urls;
+}
+
+function checkPattern(&$pattern,&$value, &$array) {
+    preg_match($pattern, $value, $matches);
+    if ($matches[0] !== null)
+    array_push($array,$matches[0]);
 }
 
 
 
+
+
 check(10, checkStrings);
+

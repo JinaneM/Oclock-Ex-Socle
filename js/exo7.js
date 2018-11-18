@@ -11,7 +11,10 @@
  */
 
 function getExtension(str) {
-
+   
+   var ext = str.split('.');
+  return !ext[1] ? false : ext.pop();
+   
 }
 
 
@@ -20,3 +23,4 @@ function getExtension(str) {
 
 // Stop ! Tests, on ne touche pas :P
 check.exo7(getExtension);
+console.log(check.exo7);

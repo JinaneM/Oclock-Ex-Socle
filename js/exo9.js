@@ -13,9 +13,32 @@
 
 function sum(arr) {
 
+    if (arr.length <= 0) {
+        return 0
+    }
+    return retriveElement(arr);
 }
+
+
+function retriveElement(arr, result = 0) {
+    console.log(arr, result);
+    arr.forEach(element => {
+        if (typeof element === 'number') {
+           result = result + element;
+        }
+        //Méthode Récursive
+        if (Array.isArray(element)) {
+            result = retriveElement(element,result);
+
+        }
+    });
+
+    return result;
+ }
+
 
 
 
 // Stop ! Tests, on ne touche pas :P
 check.exo9(sum);
+console.log(check.exo9);

@@ -11,10 +11,24 @@
  */
 
 function getLongestString(arr) {
+ 
+    if(arr.length > 0){
+        arr.sort( function(a,b){
+            return String(b).length -String(a).length;
 
+         })
+
+        return arr[0];
+       
+    }
+    if(arr.length === 0){
+        return false;
+    }      
+      
 }
 
 
 
 // Stop ! Tests, on ne touche pas :P
 check.exo8(getLongestString);
+console.log(check.exo8);
